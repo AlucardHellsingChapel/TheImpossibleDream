@@ -1,6 +1,7 @@
 /datum/species/New()
 	. = ..()
-	customizers -= list(/datum/customizer/bodypart_feature/pubes, /datum/customizer/bodypart_feature/pits)
+	if(customizers)
+		customizers -= list(/datum/customizer/bodypart_feature/pubes, /datum/customizer/bodypart_feature/pits)
 
 /datum/species/handle_digestion(mob/living/carbon/human/H)
 	. = ..()
