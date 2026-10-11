@@ -1,3 +1,7 @@
+/datum/species/New()
+	. = ..()
+	customizers -= list(/datum/customizer/bodypart_feature/pubes, /datum/customizer/bodypart_feature/pits)
+
 /datum/species/handle_digestion(mob/living/carbon/human/H)
 	. = ..()
 	if(H.nutrition <= 0 || H.stat == DEAD || HAS_TRAIT(H, TRAIT_NOHUNGER))
