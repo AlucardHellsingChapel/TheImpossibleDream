@@ -5,3 +5,4 @@
 #include "sexcon\_sexcon.dme"
 #include "species_renames\species_renames.dme"
 #include "loadout\_loadout.dme"
+#include "iconoclast_tweak\_iconoclast_tweak.dme"
