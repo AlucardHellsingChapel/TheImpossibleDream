@@ -13,8 +13,6 @@
 - `_nudist_approved.dme`: local includes.
 - `code/nudist_approved.dm`: item variable, examine/sleep/stripping overrides, and trait descriptions.
 - `code/approved_items.dm`: accessory approvals and armored exceptions.
-- `code/tests.dm`: regression tests for equipment gates, examine hints, sleep
-  exceptions, and stripping multipliers (included only in test/static-analysis builds).
 
 ## Core files changed
 
