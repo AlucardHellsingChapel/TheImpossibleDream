@@ -122,8 +122,6 @@
 #define ORGAN_SLOT_VAGINA "vagina"
 
 #define BODYPART_FEATURE_CHASTITY "chastity"
-#define BODYPART_FEATURE_PUBES "pubes"
-#define BODYPART_FEATURE_PITS "pits"
 
 #define BODY_HAIR_MATERIAL_HAIR 1
 #define BODY_HAIR_MATERIAL_FUR 2
