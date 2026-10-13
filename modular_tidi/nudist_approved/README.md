@@ -2,7 +2,7 @@
 
 **Tag:** `NUDIST_APPROVED`
 
-**Created in:** Pending this change's PR.
+**Created in:** https://github.com/Shadow-Fragger-Metaclique-Gang/TheImpossibleDream/pull/44
 
 **Major changes:** Port of [Ratwood PR #962](https://github.com/Rotwood-Vale/Ratwood-2.0/pull/962).
 

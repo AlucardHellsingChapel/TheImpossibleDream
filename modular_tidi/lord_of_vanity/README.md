@@ -2,7 +2,7 @@
 
 **Tag:** `LORD_OF_VANITY`
 
-**Created in:** Pending this change's PR.
+**Created in:** https://github.com/Shadow-Fragger-Metaclique-Gang/TheImpossibleDream/pull/44
 
 **Major changes:**
 
