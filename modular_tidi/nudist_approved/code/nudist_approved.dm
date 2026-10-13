@@ -53,3 +53,8 @@
 
 /datum/special_trait/nude_sleeper
 	greet_text = span_boldwarning("I can't fall asleep unless I'm nude and resting comfortably. Unremovable clothing and certain accessories are allowed.")
+
+/datum/species/can_equip(obj/item/I, slot, disable_warning, mob/living/carbon/human/H, bypass_equip_delay_self = FALSE)
+	if(slot == SLOT_HEAD && HAS_TRAIT(H, TRAIT_NUDIST) && !I.nudist_approved)
+		return FALSE
+	return ..()

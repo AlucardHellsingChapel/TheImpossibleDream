@@ -2,8 +2,8 @@
 /obj/item/clothing/suit/roguetown/armor/manual/meditation/body/duke
 	name = "the lord's new clothes"
 	desc = "The finest clothes in all the land, tailored at GREAT expense by a most wise and radiant lord. It's said they're invisible to only the dimwitted."
-	body_parts_covered = COVERAGE_ALL_BUT_LEGS|NECK
-	body_parts_inherent = COVERAGE_ALL_BUT_LEGS|NECK
+	body_parts_covered = COVERAGE_ALL_BUT_HANDLEGS|NECK
+	body_parts_inherent = COVERAGE_ALL_BUT_HANDLEGS|NECK
 	armor = ARMOR_BRONZE
 	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER
 	repair_fraction = 0.35
