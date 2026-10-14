@@ -56,7 +56,15 @@ export const ExaminePanel = () => {
               onClick={() => act('donator_chat')}
             />
           )}
-          {/* SRLS edit - removes user-facing agevet sign */}
+          {/*SRLS EDIT START - removes agevet icon !!is_vet && (
+            <Button
+              color="gold"
+              icon="crown"
+              tooltip="This player is age-verified!"
+              tooltipPosition="bottom-start"
+              onClick={() => act('vet_chat')}
+            />
+          )SRLS EDIT END - removes agevet icon */}
           <Button
             color="green"
             icon="music"

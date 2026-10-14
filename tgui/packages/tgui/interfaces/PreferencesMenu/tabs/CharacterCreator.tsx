@@ -260,7 +260,20 @@ const Sidebar = () => {
                 Triumphs: {triumphs}
               </Button>
             </Stack.Item>
-            {/* SRLS edit - removes user-facing agevet sign */}
+            {/* SRLS EDIT START - removes agevet icon <Stack.Item>
+              <Button fluid icon="baby" onClick={() => act('agevet')}>
+                Verified:{' '}
+                {agevet ? (
+                  <Box inline color="#74cde0">
+                    YAE!
+                  </Box>
+                ) : (
+                  <Box inline color="#897472">
+                    NAE?
+                  </Box>
+                )}
+              </Button>
+            </Stack.Item> SRLS EDIT END - removes agevet icon */}
             <Stack.Item grow />
             <Stack.Item>
               <Button
