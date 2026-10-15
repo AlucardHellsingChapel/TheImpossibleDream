@@ -16,7 +16,6 @@
 	traits_applied = list(
 		TRAIT_NOBLE,
 		TRAIT_BLOOD_RESISTANCE,
-		TRAIT_CRITICAL_RESISTANCE,//essentially unnerfed crit rest. Your are naked and will need it
 		TRAIT_DNR,
 		TRAIT_NUDIST,//you wouldn't dare take off your new clothes, right?
 		TRAIT_BEAUTIFUL,
