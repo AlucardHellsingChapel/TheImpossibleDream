@@ -1,4 +1,5 @@
 // #include "accent\accent.dm" Fucked by Sep-24 parity.
+#include "combat_music\_combat_music.dme"
 #include "commandbar\_commandbar.dme"
 #include "job_weapon_overrides\_job_weapon_overrides.dme"
 #include "loadout\_loadout.dme"
