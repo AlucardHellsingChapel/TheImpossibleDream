@@ -1,5 +1,5 @@
 // #include "accent\accent.dm" Fucked by Sep-24 parity.
-#include "combat_music\combat_music.dme"
+#include "combat_music\_combat_music.dme"
 #include "commandbar\_commandbar.dme"
 #include "job_weapon_overrides\_job_weapon_overrides.dme"
 #include "loadout\_loadout.dme"
@@ -9,7 +9,3 @@
 #include "phrase_highlights\_phrase_highlights.dme"
 #include "sexcon\_sexcon.dme"
 #include "species_renames\species_renames.dme"
-#include "loadout\_loadout.dme"
-#include "job_weapon_overrides\_job_weapon_overrides.dme"
-#include "nudist_approved\_nudist_approved.dme"
-#include "lord_of_vanity\_lord_of_vanity.dme"
