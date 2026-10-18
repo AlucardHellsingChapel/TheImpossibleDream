@@ -1,7 +1,9 @@
 // #include "accent\accent.dm" Fucked by Sep-24 parity.
+#include "belt_keys\_belt_keys.dme"
 #include "combat_music\_combat_music.dme"
 #include "commandbar\_commandbar.dme"
 #include "excidium\_excidium.dme"
+#include "iconoclast_tweak\_iconoclast_tweak.dme"
 #include "job_weapon_overrides\_job_weapon_overrides.dme"
 #include "loadout\_loadout.dme"
 #include "lord_of_vanity\_lord_of_vanity.dme"
@@ -10,4 +12,6 @@
 #include "phrase_highlights\_phrase_highlights.dme"
 #include "pq-remover\_pq-remover.dme"
 #include "sexcon\_sexcon.dme"
+#include "sound_changes\_sound_changes.dme"
+#include "species_changes\_species_changes.dme"
 #include "species_renames\_species_renames.dme"
