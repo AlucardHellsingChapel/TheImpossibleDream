@@ -915,11 +915,14 @@
 		if(name in GLOB.excommunicated_players)
 			. += span_userdanger("HERETIC! SHAME!")
 
+		// [SURREALIS-REMOVE] - EXCIDIUM - removes fluoride validhunt stare
+		/**
 		if(HAS_TRAIT(src, TRAIT_EXCOMMUNICATED))
 			. += span_userdanger("EXCOMMUNICATED! SHAME!")
 		if(name in GLOB.outlawed_players)
 			. += span_userdanger("OUTLAW!")
-
+		*/
+		//[/SURREALIS-REMOVE]
 		. += deadite_examine()
 
 		var/datum/antagonist/vampire/vamp_inspect_vlord = src.mind?.has_antag_datum(/datum/antagonist/vampire/lord)
@@ -953,11 +956,15 @@
 			if(H.marriedto == name)
 				. += span_love("It's my spouse.")
 
+		// [SURREALIS-REMOVE] - EXCIDIUM - removes validhunting tools
+		/**
 		if(HAS_TRAIT(user, TRAIT_JUSTICARSIGHT) && !HAS_TRAIT(src, TRAIT_DECEIVING_MEEKNESS))
 			for(var/datum/bounty/b in GLOB.head_bounties)
 				if(b.target == real_name)
 					. += span_syndradio("[m3] a bounty on [m2] head of [b.amount] mammon for [b.reason], issued by [b.employer].")
 					break
+		*/
+		// [/SURREALIS-REMOVE]
 
 		if(name in GLOB.court_agents)
 			var/datum/job/J = SSjob.GetJob(user.mind?.assigned_role)
@@ -1182,22 +1189,30 @@
 			if(HAS_TRAIT(examiner, TRAIT_FREEMAN))
 				heretic_text += " To share with. To take with. For all, and us."
 		else if(HAS_TRAIT(examiner, TRAIT_FREEMAN))
-			heretic_text += "Fellow Free Man!"
+			heretic_text += "Comrade!"
+	//SRLS EDIT START - heretic examine texts for others of the Four
 	else if((HAS_TRAIT(src, TRAIT_CABAL)))
 		if(seer)
 			heretic_text += "A member of Zizo's cabal."
 			if(HAS_TRAIT(examiner, TRAIT_CABAL))
 				heretic_text += " May their ambitions not interfere with mine."
+		else if(HAS_TRAIT(examiner, TRAIT_CABAL))
+			heretic_text += "Cabalist!"
 	else if((HAS_TRAIT(src, TRAIT_HORDE)))
 		if(seer)
 			heretic_text += "Hardened by Graggar's Rituals."
 			if(HAS_TRAIT(examiner, TRAIT_HORDE))
 				heretic_text += " Mine were a glorious memory."
+		else if(HAS_TRAIT(examiner, TRAIT_HORDE))
+			heretic_text += "Anointed!"
 	else if((HAS_TRAIT(src, TRAIT_DEPRAVED)))
 		if(seer)
-			heretic_text += "Baotha's Touched."
+			heretic_text += "Baotha's debauched."
 			if(HAS_TRAIT(examiner, TRAIT_DEPRAVED))
 				heretic_text += " She leads us to the greatest ends."
+		else if(HAS_TRAIT(examiner, TRAIT_DEPRAVED))
+			heretic_text += "Exalted!"
+	//SRLS EDIT END - heretic examine texts for others of the Four
 
 	return heretic_text
 
@@ -1208,6 +1223,14 @@
 		return
 	if(HAS_TRAIT(src, TRAIT_FREEMAN) && HAS_TRAIT(examiner, TRAIT_FREEMAN))
 		heretic_text += "⚖️"
+	//SRLS EDIT START - heretic text icons for others of the Four
+	if(HAS_TRAIT(src, TRAIT_CABAL) && HAS_TRAIT(examiner, TRAIT_CABAL))
+		heretic_text += "👑"
+	if(HAS_TRAIT(src, TRAIT_HORDE) && HAS_TRAIT(examiner, TRAIT_HORDE))
+		heretic_text += "🩸"
+	if(HAS_TRAIT(src, TRAIT_DEPRAVED) && HAS_TRAIT(examiner, TRAIT_DEPRAVED))
+		heretic_text += "🖤"
+	//SRLS EDIT END - heretic text icons for others of the Four
 
 	return heretic_text
 
