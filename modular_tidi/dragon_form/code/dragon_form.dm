@@ -596,4 +596,4 @@
 	glow_color = GLOW_COLOR_MATTHIOS
 	glow_intensity = GLOW_INTENSITY_LOW
 	invocation_type = "none"
-	recharge_time = 10 SECONDS
+	recharge_time = 15 SECONDS
