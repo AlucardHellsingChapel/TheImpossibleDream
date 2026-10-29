@@ -326,6 +326,7 @@
 	penfactor = PEN_HEAVY
 	candodge = FALSE
 	canparry = FALSE
+	swingdelay = 0.8 SECONDS
 	swingdelay_type = SWINGDELAY_CANCEL
 	miss_text = "slashes the air!"
 	miss_sound = "bluntwooshlarge"
