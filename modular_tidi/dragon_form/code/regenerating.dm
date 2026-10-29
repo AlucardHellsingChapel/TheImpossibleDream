@@ -13,5 +13,5 @@
 	item_flags = DROPDEL
 
 	auto_repair_mode = TRUE
-	relative_repair_interval = 15 SECONDS
-	interrupt_damount = 15
+	relative_repair_interval = 60 SECONDS
+	interrupt_damount = 60

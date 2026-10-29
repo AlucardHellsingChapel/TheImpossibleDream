@@ -63,17 +63,17 @@
 /mob/living/carbon/human/species/wildshape/dragon_matthios/gain_inherent_skills()
 	if(mind)
 		adjust_skillrank(/datum/skill/combat/wrestling, SKILL_LEVEL_MASTER, TRUE)
-		adjust_skillrank(/datum/skill/combat/unarmed, SKILL_LEVEL_MASTER, TRUE)
+		adjust_skillrank(/datum/skill/combat/unarmed, SKILL_LEVEL_EXPERT, TRUE)
 		adjust_skillrank(/datum/skill/misc/swimming, SKILL_LEVEL_EXPERT, TRUE)
 		adjust_skillrank(/datum/skill/misc/athletics, SKILL_LEVEL_MASTER, TRUE)
 		adjust_skillrank(/datum/skill/magic/arcane, SKILL_LEVEL_EXPERT, TRUE)
 
 		STASTR = 15
-		STACON = 15
-		STAWIL = 15
-		STAPER = 12
+		STACON = 14
+		STAWIL = 14
+		STAPER = 10
 		STASPD = 6
-		STAINT = 15
+		STAINT = 13
 
 		AddSpell(new /obj/effect/proc_holder/spell/self/twilight_dragonclaws)
 		AddSpell(new /obj/effect/proc_holder/spell/invoked/gilded_swoop)
@@ -246,7 +246,6 @@
 	species_traits = list(NO_UNDERWEAR, NO_ORGAN_FEATURES, NO_BODYPART_FEATURES)
 	inherent_traits = list(
 		TRAIT_TOXIMMUNE,
-		TRAIT_CRITICAL_RESISTANCE,
 		TRAIT_NOPAINSTUN,
 		TRAIT_NOFIRE,
 		TRAIT_NIGHT_VISION,
@@ -258,7 +257,6 @@
 		TRAIT_WILD_EATER,
 		TRAIT_HARDDISMEMBER,
 		TRAIT_PIERCEIMMUNE,
-		TRAIT_LONGSTRIDER,
 		TRAIT_NOFALLDAMAGE1,
 		TRAIT_KNEESTINGER_IMMUNITY
 	)
@@ -328,6 +326,7 @@
 	penfactor = PEN_HEAVY
 	candodge = TRUE
 	canparry = TRUE
+	swingdelay_type = SWINGDELAY_CANCEL
 	miss_text = "slashes the air!"
 	miss_sound = "bluntwooshlarge"
 	item_d_type = "slash"
@@ -359,7 +358,7 @@
 	max_integrity = 600
 	force = 28
 	block_chance = 0
-	wdefense = 6
+	wdefense = 4
 	blade_dulling = DULLING_SHAFT_WOOD
 	associated_skill = /datum/skill/combat/unarmed
 	wlength = WLENGTH_NORMAL
