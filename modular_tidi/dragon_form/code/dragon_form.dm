@@ -62,18 +62,18 @@
 
 /mob/living/carbon/human/species/wildshape/dragon_matthios/gain_inherent_skills()
 	if(mind)
-		adjust_skillrank(/datum/skill/combat/wrestling, SKILL_LEVEL_MASTER, TRUE)
+		adjust_skillrank(/datum/skill/combat/wrestling, SKILL_LEVEL_EXPERT, TRUE)
 		adjust_skillrank(/datum/skill/combat/unarmed, SKILL_LEVEL_EXPERT, TRUE)
 		adjust_skillrank(/datum/skill/misc/swimming, SKILL_LEVEL_EXPERT, TRUE)
 		adjust_skillrank(/datum/skill/misc/athletics, SKILL_LEVEL_MASTER, TRUE)
-		adjust_skillrank(/datum/skill/magic/arcane, SKILL_LEVEL_EXPERT, TRUE)
+		adjust_skillrank(/datum/skill/magic/arcane, SKILL_LEVEL_JOURNEYMAN, TRUE)
 
 		STASTR = 15
 		STACON = 14
 		STAWIL = 14
 		STAPER = 10
 		STASPD = 6
-		STAINT = 13
+		STAINT = 10
 
 		AddSpell(new /obj/effect/proc_holder/spell/self/twilight_dragonclaws)
 		AddSpell(new /obj/effect/proc_holder/spell/invoked/gilded_swoop)
@@ -302,14 +302,14 @@
 
 /datum/intent/simple/twilight_dragon_cut
 	name = "claw"
-	clickcd = 10
+	clickcd = 12
 	icon_state = "incut"
 	blade_class = BCLASS_CUT
 	attack_verb = list("claws", "mauls", "eviscerates")
 	animname = "cut"
 	hitsound = "genslash"
 	penfactor = PEN_MEDIUM
-	reach = 2
+	reach = 1
 	candodge = TRUE
 	canparry = TRUE
 	miss_text = "slashes the air!"
@@ -324,13 +324,13 @@
 	animname = "chop"
 	hitsound = "genslash"
 	penfactor = PEN_HEAVY
-	candodge = TRUE
-	canparry = TRUE
+	candodge = FALSE
+	canparry = FALSE
 	swingdelay_type = SWINGDELAY_CANCEL
 	miss_text = "slashes the air!"
 	miss_sound = "bluntwooshlarge"
 	item_d_type = "slash"
-	damfactor = 1.2
+	damfactor = 1.5
 
 /datum/intent/mace/smash/twilight_dragon_smash
 	name = "thrash"
